@@ -1,0 +1,12 @@
+{
+  "name": "web3goals-notifier",
+  "version": "0.1",
+  "scripts": {
+    "build": "rm -rf ./build && tsc",
+    "start": "npm run build && node build/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.4",
+    "typescript": "^5.0.4"
+  }
+}
