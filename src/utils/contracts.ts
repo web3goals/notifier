@@ -49,14 +49,7 @@ export async function getGoalParams(
   };
 }
 
-export async function getProfileUri(profileOwnerAddress: string): Promise<{
-  profileUri?: string;
-}> {
-  const profileUri = await profileContract.getURI(profileOwnerAddress);
-  return { profileUri };
-}
-
-export async function parseTransactionMessagePostedEvent(
+export async function parseGoalTransactionMessagePostedEvent(
   transactionHash: string
 ): Promise<{
   goalId?: string;
@@ -75,4 +68,11 @@ export async function parseTransactionMessagePostedEvent(
     } catch (error) {}
   }
   return {};
+}
+
+export async function getProfileUri(profileOwnerAddress: string): Promise<{
+  profileUri?: string;
+}> {
+  const profileUri = await profileContract.getURI(profileOwnerAddress);
+  return { profileUri };
 }

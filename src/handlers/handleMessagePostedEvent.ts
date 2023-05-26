@@ -2,7 +2,7 @@ import * as dotenv from "dotenv";
 import {
   getGoalParams,
   getProfileUri,
-  parseTransactionMessagePostedEvent as parseTransactionWithMessagePostedEvent,
+  parseGoalTransactionMessagePostedEvent as parseTransactionWithMessagePostedEvent,
 } from "../utils/contracts";
 import { sendEmailToGoalAuthorWhenMessagePosted } from "../utils/email";
 import { loadProfileUriDataFromIpfs } from "../utils/ipfs";
