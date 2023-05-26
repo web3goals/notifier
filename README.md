@@ -3,4 +3,4 @@
 ## Commands
 
 - Install dependencies - `npm install`
-- Run sandbox - `npm run sandbox`
+- Run script to handle message posted event - `npm run handle-message-posted-event`
